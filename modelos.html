@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #Titulo{
+            width: 100%;
+            height: 40%;
+            background-color:rgba(255, 255, 255, 0.596) ;
+            position: relative;
+        }
+        #BB{
+            width: 80%;
+            height: 40%;
+            background-color: white ;
+            position: relative;
+            font-family: 'Courier New', Courier, monospace;
+            border-radius: 18%;
+        }
+        #BB p{
+            font-size: medium;
+            text-align: center;
+           
+        }
+        #Enca{
+            position: fixed;
+            position: sticky;
+            border-bottom-right-radius: 250px;
+            width: 280px;
+            height: 50px;
+            background-color: #000000;
+            color: white;
+            text-align: center;
+            padding-top: 20px;
+            margin-left: 0px;
+            margin-top: 0px;
+        }
+        #Enca p{
+            font-family: 'roboto' sans-serif;
+            font-size: medium;
+        }
+        .menu{
+            width: auto;
+            height: auto;
+            float: right;
+        }
+        .menu li a{
+            margin-top: 0px;
+            color: rgb(254, 254, 255);
+            padding: 20px;
+            display: block;
+            font-family: 'roboto' sans-serif;
+            text-decoration: none;
+            background-color:  black;
+        }
+        .menu li{
+            display: inline-block;
+            text-align: center;
+        }
+        .menu li a hover{
+            background: #000000c4;
+            cursor: pointer;
+            text-align: center;
+            transition: all o.4s ease 0s;
+        }
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Roboto', sans-serif;
+}
+body{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image:url(fondo2.jpeg);
+}
+.photocard{
+    position: relative;
+    width: 300px;
+    height: 350px;
+    margin: 15px;
+}
+.photocard .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+}
+.photocard .front{
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+}
+.photocard .front img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.photocard .front h3{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, .4);
+    text-align: center;
+}
+.photocard .back{
+    transform: perspective(600px) rotateY(180deg);
+    background-color: rgb(20, 20, 36);
+    padding: 15px;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px;
+}
+.photocard .back .link{
+    border-top: solid 1px rgb(255, 255, 255);
+    height: 50px;
+    line-height: 50px;
+}
+.photocard .back .link a{
+    color: rgb(255, 255, 255);
+}
+.photocard.back h3{
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+.photocard .back p{
+    letter-spacing: 1px;
+}
+.photocard:hover .front{
+    transform: perspective(600px) rotateY(180deg);
+}
+.photocard:hover .back{
+    transform: perspective(600px) rotateY(360deg);
+}
+
+    </style>
+</head>
+<body >
+    <div id="Titulo">
+    <div id="Enca">OPTICA SUPER NOVA</div>
+    <div class="menu">
+        <ul>
+            <li><a href="pagina-veta.html">Pagina Principal</a></li>
+        </ul>
+    </div>
+    </div>
+
+<div id="BB">
+        <h1 align="center"><font size="5%" >Catalgo de Lentes<br< ¡DISFRUTA!<br> </font></h1>
+        <p align="center">Los mejores modelos para que destaques entre tus amigos  </p>
+    </div>
+
+    <div class="photocard">
+        <div class="face front">
+            <img src="lentes de contacto.jpeg">
+            <h3>LENTES DE CONTACTO</h3>
+        </div>
+        <div class="face back">
+            <h3></h3>
+            <p> colores disponibles
+                <p>Azul</p>
+                <p>Verde</p>
+                <p> Cafe</p>
+                <p> Rojo</p>
+                <p> Gris</p>
+                <p>trasparentes</p>
+
+                <p>contamos con los estuches donde los puedes guardar y la solucin que es un liquido para lubricarlos</p>
+
+                <p>EL Presio es $200 pesos un solo par, por paquete $1200 pesos  con 6 pares, la consulta es de $100 pesos sin importar la compra,el presio no cambia por la graduasion de los lentes  </p>
+                   </p>
+                   <a href="sitas.html">Agenda lo antes posible :)</a>
+        </div>
+    </div>
+    <div class="photocard">
+        <div class="face front">
+            <img src="lentesrrr.jpeg">
+            <h3>LENTES DE DESCANSO</h3>
+        </div>
+        <div class="face back">
+    
+            <h3>variedad de armasones, colores y tamaños</h3>
+            <p>Detalles de armason y color</p>
+            <p>Colores disponibles</p>
+            <p>Negros</p>
+            <p>Grises</p>
+            <p>Azules</p>   
+                <p>Si tienes otro modelo de lentes que te gusten puedes llevar una foto el dia de la cita y los podemos conseguir</p>
+
+                <p>El presio es de $500 pesos, la consulta es de $100 pesos sin importar la compra, la graduacion de los lentes no afecta el presio </p>
+                   </p> 
+                   <a href="sitas.html">Agenda lo antes posible da click aqui  :)</a>
+        </div>
+    </div>
+
+    <div class="photocard">
+        <div class="face front">
+            <img src="lentes mujer normales.jpeg">
+            <h3>LENTES PARA DAMA </h3>
+        </div>
+        <div class="face back">
+            
+            <h3>descubre tu estilo con este modelo de lentes </h3>
+            <p>Detalles de armason y color</p>
+            <p>Negros</p>
+            <p>Grises</p>
+            <p>Azules</p>
+               
+            <p>Si tienes otro modelo de lentes que te gusten puedes llevar una foto el dia de la cita y los podemos conseguir</p>
+
+                <p>EL presio es de $500 pesos,  la consulta es de $100 pesos sin importar la compra,la graduacion de los lentes no afecta el presio</p>
+                   </p>
+            <div class="link"></div>
+            <a href="sitas.html">Agenda lo antes posible :)</a>
+        </div>
+    </div>
+    <div class="photocard">
+        <div class="face front">
+            <img src="lentes de soll.jpeg">
+            <h3>Lentes de sol </h3>
+        </div>
+        <div class="face back">
+            <h3>Los mejores modelos para tu estilo</h3>
+            <p>Detalles de armason y color</p>
+            <p> colores disponibles
+                <p>Negros </p>
+                <p>Rogos</p>
+                <p>Azules</p>
+                <p>El armason por lo general es de color plateado pero podemos personalisarlo </p>
+                <p>Si tienes otro modelo de lentes que te gusten puedes llevar una foto el dia de la cita y los podemos conseguir</p>
+
+               
+                <p> El Presio es de $1000 pesos, la consulta es de $100 pesos sin importar la compra, la graduacion de los lentes no afecta el presio </p>
+                   </p>
+            <div class="link"></div>
+            <a href="sitas.html">Agenda lo antes posible :)</a>
+        </div>
+    </div>
+    <div class="photocard">
+        <div class="face front">
+            <img src="aviador.jpeg">
+            <h3>Lentes con estilo de aviador</h3>
+        </div>
+        <div class="face back">
+            <h3>Mejora tu estilo </h3>
+            <p>Detalles de armason y color</p>
+            <p> lentes en forma redondiada estilo aviador
+                
+                <p>Amarillos</p>
+                <p>Negros</p>
+                <p>Trasparentes</p>
+                <p>Si tienes otro modelo de lentes que te gusten puedes llevar una foto el dia de la cita y los podemos conseguir</p>
+
+
+                <p> EL costo es $600 pesos, la consulta es de $100 pesos sin importar la compra,la graduacion no afecta el presio</p>
+                   </p>
+            <div class="link"></div>
+            <a href="sitas.html">Agenda lo antes posible da click aqui  :)</a>
+        </div>
+    </div>
+    <div class="photocard">
+        <div class="face front">
+            <img src="sol mujer.jpeg">
+            <h3>Lentes para dama</h3>
+        </div>
+        <div class="face back">
+            <h3>variedade de colores </h3>
+            <p>Detalles de armason y color</p>
+           <p>Colores:</p>
+                <p>Amarillos</p>
+                <p>Negros</p>
+                <p>Trasparentes</p>
+                <p>puedes preguntar por cualquier otro diseño que no aparesca qui y lo podemos conseguir</p>
+           <p>El presio es de $600 pesos, la consulta es de 100 pesos sin importar la compra, la graduacion de los lentes no afecta el presio</p>
+                   </p>
+            <div class="link"></div>
+            <a href="sitas.html">Agenda lo antes posible da click aqui :)</a>
+        </div>
+    </div>
+    <div class="photocard">
+        <div class="face front">
+            <img src="lentes para niña.jpeg">
+            <h3>Lentes para niña </h3>
+        </div>
+        <div class="face back">
+            <h3>Variedad de estilos y colores</h3>
+            <p>Detalles de armason</p>
+            <p> Estampados y diseños </p>
+            
+                <p>puedes pedir un diseño personalidsado a la doctora el dia de la sita</p>
+
+                <p>El presio es de $200 pesos, la consulta es de $100 pesos sin importar la compra</p>
+            </p>
+            <div class="link"></div>
+            <a href="sitas.html">Agenda lo antes posible da click aqui :)</a>
+        </div>
+    </div>
+    <div class="photocard">
+        <div class="face front">
+            <img src="lentes para niño.jpeg">
+            <h3>Lentes para niño</h3>
+        </div>
+        <div class="face back">
+            <h3>Variedad de estilos y colores</h3>
+            <p>Detalles de armason</p>
+            <p> Estampados y diseños 
+                
+                <p>puedes pedir un diseño personalidsado a la dotora el dia de la sita</p>
+            </p>
+            <p>El presio es de $200 pesos, la consulta es de $100 pesos sin importar la compra. la graduacion de los lentes no afecta el presio</p>
+                
+                   </p>
+            <div class="link"></div>
+            <a href="sitas.html">Agenda lo antes posible da click aqui :)</a>
+        </div>
+    </div>
+    <div class="photocard">
+        <div class="face front">
+            <img src="lentes para adultos mallores.jpeg">
+            <h3>Lentes para adultos mallores </h3>
+        </div>
+        <div class="face back">
+            <h3>Lentes a un bajo consto sin importar la graduacion</h3>
+            
+                <p>Detalles de armason</p>
+                <p>contamos con colores clasicos y neutros</p>
+                <p>Negros, Grises, Blamcos </p>
+                <p>Caoba, metal, cromados</p>
+
+                <p>El presio es de $300 pesos, la consulta es de $100 pesos sin importar la compra, la graduacion no afecta el presio</p>
+                   </p>
+            <div class="link"></div>
+            <a href="sitas.html">Agenda lo antes posible :)</a>
+        </div>
+    </div>
+    
+        </div>
+    </div>
+
+</body>
+</html>

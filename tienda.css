@@ -1,0 +1,260 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ }
+
+ /*Codigo para menu simple y @media para menu deplegable*/
+ header {
+  width: 155%;
+  padding:25px;
+  color: white;
+  text-align: center;
+  background: #091013;
+  border-top-right-radius: 250px;
+}
+  nav ul {
+    position: relative;
+    top: 100px;
+    background: #8393a8;
+    text-align: center;
+    list-style: none;
+    overflow: hidden;
+    border-top-right-radius:220px;
+    border-bottom-right-radius:220px;
+    border-top-left-radius:220px;
+    border-bottom-left-radius:220px;
+  }
+  ul li {
+    display: inline-block;
+    padding: 20px;
+    transition: all ease-in-out 250ms;
+  }
+  ul li:hover {
+    background: #002d35;
+    border-top-right-radius:220px;
+    border-bottom-right-radius:220px;
+    border-top-left-radius:220px;
+    border-bottom-left-radius:220px;
+  }
+  ul li a {
+    color: rgb(253, 253, 255);
+    text-decoration: none;
+  }
+  .hide {
+    padding: 16px;
+    font-size: 22px;
+    background: #1f1146;
+    color: white;
+    cursor: pointer;
+    display: none;
+    border-top-right-radius:220px;
+    border-bottom-right-radius:220px;
+    border-top-left-radius:220px;
+    border-bottom-left-radius:220px;
+  }
+  #FormS1{
+    width: 80%;
+  
+  }
+  @media (max-width: 768px) {
+    #FormS1{
+      top: 60%;
+      position: absolute;
+      width: 100%;
+    }
+    ul li {
+      width: 100%;
+      padding: 15px;
+      text-align: left;
+    }
+    .hide {
+      display: block;
+    }
+    nav ul {
+    display: none;
+    top: 60%;
+    border-top-right-radius:28PX;
+    border-bottom-right-radius:28px;
+    border-top-left-radius:28px;
+    border-bottom-left-radius:28px;
+    }
+  }
+  /*final del menu...*/
+
+  body{
+    font-family: 'Roboto' sans-serif;
+    
+    background-position: 0 0, 10px 10px;
+    display: flex;
+    min-height: 100vh;
+
+    background: linear-gradient(rgba(5,7,12,0.7),rgba(5,7,12,0.7)),url(TIENDA/fondoMasck.png) no-repeat;
+    background-size: cover;
+		background-position: center;
+		
+    object-fit: cover;
+  }
+  /*Codigo para formulario*/
+  .formulario1{
+    background-color: rgb(0, 0, 0);
+    margin: auto;
+    width: 90%;
+    max-width: 400px;
+    padding: 4.5em 3em;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px -5px rgb(0, 0, 0/ 40%);
+    text-align: center;
+  }
+  .span{
+    font-size: 2rem;
+    margin-bottom: .5em;
+  }
+  #enunciado2{
+    font-weight: 300;
+    color: rgb(185, 185, 185);
+  }
+  #enunciado1{
+    font-weight: 400;
+    color: rgb(184, 184, 184);
+  }
+  #form_contenedor{
+    margin-top: 3em;
+    display: grid;
+    gap: 1.5em;
+  }
+  .form_grupo{
+    position: relative;
+    color: #112d4e;
+  }
+  .input1{
+    width: 100%;
+    background: none;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    padding: .6em .3em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgb(159, 233, 255);
+    font-family: 'Roboto' sans-serif;
+  }
+  .label1{
+    color: #6ba7cf;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    transform: translateY(10px);
+    transition:0.5, color 0.8s;
+  }
+  /*codigo para animacion de label e input en un formulario*/
+  
+  .input1:focus + .label1,
+  .input1:not(:placeholder-shown) + .label1{
+    transform: translateY(-12px) scale(.7);
+    transform-origin: left top;
+    color: rgb(0, 110, 255);
+  }
+  .bottom{
+    background: #1f1146;
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    padding: .8em 0;
+    border: none;
+    border-radius: 12px;
+  }
+  .span{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #112d4e;
+    transform: scale(0);
+    transform: left bottom;
+    transition: 0.8em;
+  }
+  
+/*codigo para carrusel de imagenes*/
+/*.slider{
+	width: 70%;
+	margin: auto;
+	overflow: hidden;
+	margin-top: 60px;
+}
+.slider ul{
+	display: flex;
+	padding: 0;
+	width: 400%;
+	animation: cambio 20s infinite alternate;
+}
+.slider ul:hover{
+	animation-play-state: paused;
+	cursor: pointer;
+}
+.slider li{
+	width: 100%;
+	list-style: none;
+}
+.slider img{
+	width: 100%;
+	height: 400px;
+}
+@keyframes cambio{
+	0%{margin-left: 0%;}
+	20%{margin-left: 0%;}
+	25%{margin-left: -100%;}
+	40%{margin-left: -100%;}
+	50%{margin-left: -200%;}
+	70%{margin-left: -200%;}
+	75%{margin-left: -300%;}
+	100%{margin-left: -300%;}
+}
+
+*/
+#bienvenida{
+  position: relative;
+  background-color: #040505;
+  top: 10%;
+  width: 85%;
+  height: 85%;
+  padding: 18px;
+  margin-left: 6.5%;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+#bienvenida1{
+  position: relative;
+  background-color: #1f1146;
+  font-family: 'Roboto' sans-serif;
+  top: 20%;
+  width: 85%;
+  height: 25%;
+  padding: 7px;
+  margin-left: 6.5%;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+@media (max-width:580px){
+  #bienvenida{
+    padding: 1px;
+    width: 98%;
+  }
+  #bienvenida1{
+    padding: 1px;
+  }
+}
+
+.logo{
+ height: 50px;
+ width: 50px;
+
+
+}
+

@@ -1,0 +1,140 @@
+body{
+    background-image:url(fondo1.jpeg);
+}
+#caja1{
+
+    background-color:  rgb(209, 238, 250);
+  padding:1px;
+  top: 10%;
+
+  width: -10%;
+}
+
+#log{
+  width: 80px;
+height: 50px;
+transform: translate(20%, 20%);
+
+}
+
+#texto{
+ 
+  float: center;
+  background-color:  rgb(209, 238, 250);
+  padding:50px;
+  width: 50%;
+  transform: translate(30%, 25%);
+}
+/*AREA DE TEXTO*/
+#h1{ text-align: justify;
+
+}
+
+#h2{
+
+  transform: translate(5%, 80%);
+
+}
+#p1{
+ 
+  font-family: Arial,;
+}
+
+#img{
+  width: 450px;
+height: 300px;
+  transform: translate(30%, 10%); 
+}
+
+
+
+#caja2{
+
+  background-color:  whitesmoke;
+padding:200px;
+transform: translate(5%, 80%);
+float: left;
+width: 10%;
+}
+
+
+
+
+/*Codigo para menu simple y @media para menu deplegable*/
+header {
+    width: 155%;
+    padding:25px;
+    color: white;
+    text-align: center;
+    background: #091013;
+    border-top-right-radius: 250px;
+  }
+    nav ul {
+      transform: translate(3%, 30%);
+      position: relative;
+      top: 100px;
+      background: #5a76c9;
+      text-align: center;
+      list-style: none;
+      overflow: hidden;
+      border-top-right-radius:220px;
+      border-bottom-right-radius:220px;
+      border-top-left-radius:220px;
+      border-bottom-left-radius:220px;
+    }
+    ul li {
+      display: inline-block;
+      padding: 20px;
+      transition: all ease-in-out 250ms;
+    }
+    ul li:hover {
+      background: #ebf1f1;
+      border-top-right-radius:220px;
+      border-bottom-right-radius:220px;
+      border-top-left-radius:220px;
+      border-bottom-left-radius:220px;
+    }
+    ul li a {
+      color: rgb(14, 14, 15);
+      text-decoration: none;
+    }
+    .hide {
+      padding: 16px;
+      font-size: 22px;
+      background: #1f1146;
+      color: white;
+      cursor: pointer;
+      display: none;
+      border-top-right-radius:220px;
+      border-bottom-right-radius:220px;
+      border-top-left-radius:220px;
+      border-bottom-left-radius:220px;
+    }
+    #FormS1{
+      width: 80%;
+    
+    }
+    @media (max-width: 768px) {
+      #FormS1{
+        top: 60%;
+        position: absolute;
+        width: 100%;
+      }
+      ul li {
+        width: 100%;
+        padding: 15px;
+        text-align: left;
+      }
+      .hide {
+        display: block;
+      }
+      nav ul {
+      display: none;
+      top: 60%;
+      border-top-right-radius:28PX;
+      border-bottom-right-radius:28px;
+      border-top-left-radius:28px;
+      border-bottom-left-radius:28px;
+      }
+    }
+    /*final del menu...*/
